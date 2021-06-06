@@ -213,7 +213,7 @@
 
 
 <section data-markdown><script type="text/template">
-    <h3> The bad news</h3>
+    <h3> The tough news</h3>
     <table>
         <tr style="vertical-align:middle"></tr>
         <tr>
@@ -327,7 +327,7 @@
     <ul>
         <li>DataLad knows two things: Datasets and files</li>
         <img class="fragment fade-in" data-fragment-index="1" style="box-shadow: 5px 5px 3px #888888" src="../pics/artwork/src/dataset.svg" height="330"> <img style="box-shadow: 5px 5px 3px #888888" height="330" class="fragment fade-in" data-fragment-index="2" src="../pics/artwork/src/local_wf.svg">
-        <li  class="fragment fade-in" data-fragment-index="3">A DataLad dataset is an Git repository:</li>
+        <li  class="fragment fade-in" data-fragment-index="3">A DataLad dataset is a Git repository:</li>
         <ul class="fragment fade-in" data-fragment-index="3">
             <li>Content and domain agnostic</li>
             <li>Minimization of custom procedures or data structures (<b>user must not lose data or data access if DataLad vanishes)</b></li>
@@ -337,6 +337,39 @@
         <!--<img class="fragment fade-in" style="box-shadow: 5px 5px 3px #888888"  height="330" src="../pics/artwork/src/collaboration.svg">-->
     </ul>
 </section>
+
+<section>
+  <h2>DataLad Datasets</h2>
+
+    <p align="left">
+    DataLad datasets core data structure. Datasets features:
+    </p>
+
+  <dl>
+      <dt class="fragment fade-in-then-semi-out" data-fragment-index="1">Version controlled content, regardless of size</dt>
+      <dd class="fragment fade-in" data-fragment-index="2">Relying on the tools Git and Git-annex working in the background.</dd>
+
+      <dt class="fragment fade-in-then-semi-out" data-fragment-index="3">Provenance tracking</dt>
+      <dd class="fragment fade-in" data-fragment-index="4">Record and find out how data came into existence (including the
+      software environment), and reproduce entire analyses.</dd>
+
+      <dt class="fragment fade-in-then-semi-out" data-fragment-index="5">Easy collaboration</dt>
+      <dd class="fragment fade-in" data-fragment-index="6">Install others' datasets, share datasets, publish datasets with third-party services.</dd>
+
+      <dt class="fragment fade-in-then-semi-out" data-fragment-index="7">Staying up to date</dt>
+      <dd class="fragment fade-in" data-fragment-index="8"> Datasets can know their copies or origins.
+      This allows to <b>update</b> datasets from their sources with a single command.</dd>
+
+      <dt class="fragment fade-in-then-semi-out" data-fragment-index="9">Modularity & Nesting</dt>
+      <dd class="fragment fade-in" data-fragment-index="10">Individual datasets are independent, versioned components that can be
+      <i>nested</i> as <i>subdatasets</i> in <i>superdatasets</i>. Subdatasets
+      have a stand-alone version history, and their <i>version state</i> is
+      recorded in the superdataset. </dd>
+  </dl>
+
+
+</section>
+
 
 <section data-transition="None">
     <h2>Version Control: Data</h2>
@@ -641,6 +674,18 @@ action summary:
     <li class="fragment fade-in-then-semi-out"> Transparent and reproducible science: link code, data, software, and execution
     in a human- and machine-readable way</li>
     <li class="fragment fade-in-then-semi-out"> Collaborate: Generic workflows, interoperabality with established tools & services</li>
+ <!--   <li class="fragment fade-in-then-semi-out"> Publish and share data, but retain complete control over storage and access</li> -->
+
+</ul>
+</section>
+<section>
+    <h2>{Open,Transparent,Reproducible} science: warning</h2>
+
+<ul>
+    <li class="fragment fade-in-then-semi-out"> These tools are technical - when to use / not use ? </li>
+    <li class="fragment fade-in-then-semi-out"> These tools are experimental: rapid evolution of versions </li>
+    <li class="fragment fade-in-then-semi-out"> These tools efficiency depend on your setting (Windows?) </li>
+    <li class="fragment fade-in-then-semi-out"> Experiment before you commit ! </li>
  <!--   <li class="fragment fade-in-then-semi-out"> Publish and share data, but retain complete control over storage and access</li> -->
 
 </ul>
